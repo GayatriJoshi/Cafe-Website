@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Images/cafe.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>C++ Perk</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="Images/cafe.png" alt="Cafe Logo" />
+          C++ Perk
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
+            <li class="nav__item">
+              <a href="#recently" class="nav__link">Recent</a>
+            </li>
+          </ul>
+          <!--Close Button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__buttons">
+          <!--Theme-->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="menu">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <img src="Images/sandwich.png" alt="Coffee" class="home__img" />
+          <div class="home__data">
+            <h1 class="home__title">
+              Have a delicious meal
+              <div><img src="Images/Sandwich2.png" /> Sandwich</div>
+            </h1>
+            <p class="home__description">
+              Enjoy a delicious meal with your friends and family.
+            </p>
+            <a href="" class="button">
+              Order Now <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--ABOUT-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <span class="section__subtitle">About Us</span>
+            <h2 class="section__title about__title">
+              <div>
+                We Assure
+                <img src="Images/Cookies.png" alt="Cookies" />
+              </div>
+              Quality Food
+            </h2>
+            <p class="about__description">
+              We prioritize sourcing the finest quality ingredients, emphasizing
+              locally-sourced and seasonal produce whenever possible. By
+              partnering with trusted suppliers, we ensure that our customers
+              enjoy fresh, flavorful, and sustainable food and beverages.
+            </p>
+          </div>
+          <img src="Images/CreamPuff.png" alt="Cream Puff" class="about__img" />
+        </div>
+      </section>
+      <section class="popular section" id="popular">
+        <span class="section__subtitle">We serve the best</span>
+        <h2 class="section__title">Ice Creams !</h2>
+        <div class="popular__container container grid">
+          <article class="popular__card">
+            <img
+              src="Images/IceCream5-removebg-preview.png"
+              alt="popular img"
+              class="popular__img"
+            />
+            <h3 class="popular__name">Chocolate Delite</h3>
+            <span class="popular__description">Plain Chocolate Ice-Cream</span>
+            <span class="popular__price">$20.50</span>
+            <button class="popular__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+          <article class="popular__card">
+            <img
+              src="Images/IceCream3-removebg-preview.png"
+              alt="popular img"
+              class="popular__img"
+            />
+            <h3 class="popular__name">Cookie Dough</h3>
+            <span class="popular__description"
+              >Cookie Dough flavoured scoop</span
+            >
+            <span class="popular__price">$25.80</span>
+            <button class="popular__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+          <article class="popular__card">
+            <img
+              src="Images/heart.png"
+              alt="popular img"
+              class="popular__img"
+            />
+            <h3 class="popular__name">Hearts n Smiles</h3>
+            <span class="popular__description">Choco Strawberry flavour</span>
+            <span class="popular__price">$30.00</span>
+            <button class="popular__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="recently section" id="recently">
+        <div class="recently__container container grid">
+          <div class="recently__data">
+            <span class="section__subtitle">Recently Added</span>
+            <h2 class="section__title">
+              Cheese Cake <br />
+              Small Pastry
+            </h2>
+            <p class="recently__description">
+              Have a glance at what's new.Eat good, feel good.
+            </p>
+            <a href="#" class="button"
+              >Order Now <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <img
+            src="Images/smallpastry-removebg-preview.png"
+            alt="recently image"
+            class="recently__img"
+          />
+        </div>
+      </section>
+      <section class="newsletter section">
+        <div class="newsletter__container container">
+          <div class="newsletter__content grid">
+            <img
+              src="Images/Pastry5-removebg-preview.png"
+              alt="newsletter image"
+              class="newsletter__img"
+            />
+            <div class="newsletter__data">
+              <span class="section__subtitle">Something New Everyday</span>
+              <h2 class="section__title">
+                Subscribe for <br />
+                Offers and Updates
+              </h2>
+              <form action="" class="newsletter__form">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="newsletter__input"
+                />
+                <button class="button newsletter__button">
+                  Subscribe
+                  <i class="ri-send-plane-fill"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="Images/CoffeeFooter.png" alt="logo image" /> C++ Perk
+          </a>
+          <p class="footer__description">
+            Its not just a cafe <br />
+            Its an emotion <br />
+            That friendship grew here!
+          </p>
+        </div>
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">Main Menu</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Menu</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Offers</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Events</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">Information</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Order & Returns</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Videos</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Reservation</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">Address</h3>
+            <ul class="footer__links">
+              <li class="footer__information">
+                Sector 10, B2189 <br />
+                Sambhaji Nagar, Chinchwad Pune
+              </li>
+              <li class="footer__information">8AM - 11PM</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">Follow Us</h3>
+            <ul class="footer__social">
+              <a href="#" class="footer__social-link">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="ri-twitter-line"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; Copyright Gayatri Joshi. All rights reserved
+        </span>
+      </div>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </body>
+</html>
